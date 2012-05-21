@@ -1,0 +1,6 @@
+[Core]
+Name = ElizaBot
+Module = elizaBot
+
+[Documentation]
+Description = El Cheapo shrink for you
