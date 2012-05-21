@@ -1,5 +1,5 @@
 from botplugin import BotPlugin
-import eliza
+from eliza import eliza
 from jabberbot import botcmd
 from utils import get_jid_from_message
 
