@@ -1,4 +1,4 @@
-elizabot - a classic electronic shrimp for err
+elizabot - a classic electronic shrink for err
 ==============================================
 
 For more information about err you can find it here: https://github.com/gbin/err
