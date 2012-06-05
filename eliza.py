@@ -11,7 +11,7 @@ import string
 import re
 import random
 
-class eliza:
+class Eliza:
   def __init__(self):
     self.keys = map(lambda x:re.compile(x[0], re.IGNORECASE),gPats)
     self.values = map(lambda x:x[1],gPats)
