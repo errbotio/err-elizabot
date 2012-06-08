@@ -1,7 +1,6 @@
-from botplugin import BotPlugin
+from errbot.botplugin import BotPlugin
 from eliza import Eliza
-from jabberbot import botcmd
-from utils import get_jid_from_message
+from errbot.jabberbot import botcmd
 
 __author__ = 'gbin'
 
