@@ -22,7 +22,7 @@ class Eliza:
   #----------------------------------------------------------------------
   def translate(self,str,dict):
     words = string.split(string.lower(str))
-    keys = dict.keys();
+    keys = dict.keys()
     for i in range(0,len(words)):
       if words[i] in keys:
         words[i] = dict[words[i]]
@@ -287,25 +287,3 @@ gPats = [
     "How do you feel when you say that?"]]
   ]
 
-#----------------------------------------------------------------------
-#  command_interface
-#----------------------------------------------------------------------
-def command_interface():
-  print "Therapist\n---------"
-  print "Talk to the program by typing in plain English, using normal upper-"
-  print 'and lower-case letters and punctuation.  Enter "quit" when done.'
-  print '='*72
-  print "Hello.  How are you feeling today?"
-  s = ""
-  therapist = eliza();
-  while s != "quit":
-    try: s = raw_input(">")
-    except EOFError:
-      s = "quit"
-      print s
-    while s[-1] in "!.": s = s[:-1]
-    print therapist.respond(s)
-
-
-if __name__ == "__main__":
-  command_interface()
