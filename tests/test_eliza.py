@@ -1,5 +1,6 @@
 # coding=utf-8
 from errbot.backends.test import FullStackTest, pushMessage, popMessage
+from errbot import PY3
 
 
 class TestCommands(FullStackTest):
@@ -9,7 +10,8 @@ class TestCommands(FullStackTest):
 
     def test_eliza(self):
         pushMessage('!eliza Hello')
-        self.assertRegex(popMessage(), r"Hi|Hello")
+        ref = self.assertRegex if PY3 else self.assertRegexpMatches
+        ref(popMessage(), r"Hi|Hello")
 
     def test_askus(self):
         self.assertCommandFound('!askus')
