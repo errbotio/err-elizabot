@@ -2,5 +2,8 @@
 Name = ElizaBot
 Module = elizaBot
 
+[Python]
+Version = 2+
+
 [Documentation]
 Description = El Cheapo shrink for you
