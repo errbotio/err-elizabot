@@ -4,9 +4,6 @@ from errbot import PY3
 
 
 class TestCommands(FullStackTest):
-    @classmethod
-    def setUpClass(cls, extra=None):
-        super(TestCommands, cls).setUpClass(__file__)
 
     def test_eliza(self):
         pushMessage('!eliza Hello')
